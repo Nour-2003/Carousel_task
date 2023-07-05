@@ -87,15 +87,15 @@ const dragstart1 = (e) => {
 const dragging1 = (e) => {
   if (!isDragStart1) return;
   e.preventDefault();
-  carousel1.classList.add("dragging");
+  carousel1.classList.add("dragging1");
   let positionDiff = e.pageX - prevPageX1;
   carousel1.scrollLeft = prevScrollLeft1 - positionDiff;
-  showHideIcons();
+  showHideIcons1();
 };
 
 const dragstop1 = () => {
   isDragStart1 = false;
-  carousel1.classList.remove("dragging");
+  carousel1.classList.remove("dragging1");
 };
 
 carousel1.addEventListener("mousedown", dragstart1);
