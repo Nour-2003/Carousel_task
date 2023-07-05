@@ -98,6 +98,6 @@ const dragstop1 = () => {
   carousel1.classList.remove("dragging");
 };
 
-carousel1.addEventListener("mousedown", dragstart);
-carousel1.addEventListener("mousemove", dragging);
-carousel1.addEventListener("mouseup", dragstop);
+carousel1.addEventListener("mousedown", dragstart1);
+carousel1.addEventListener("mousemove", dragging1);
+carousel1.addEventListener("mouseup", dragstop1);
