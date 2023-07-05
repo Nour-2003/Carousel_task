@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 35px;
+  font-family: Arial;
+  background-color: #1A1110;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+section {
+  display: block;
+  position: relative;
+  max-width: 1380px;
+}
+
+.Carousel {
+  display: flex;
+  overflow: hidden;
+  /* justify-content: center; */
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.Carousel.dragging {
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+
+.Carousel.dragging img {
+  pointer-events: none;
+}
+
+.Carousel div {
+  background-color: #171717;
+  border-radius: 15px;
+  margin: 7px;
+  cursor: pointer;
+}
+
+.Carousel i {
+  height: 46px;
+  width: 46px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 46px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(280%);
+  background-color: white;
+  color: black;
+}
+
+.Carousel i:first-child {
+  left: -23px;
+  display: none;
+}
+
+.Carousel i:last-child {
+  right: -23px;
+}
+
+.Carousel1 {
+  display: flex;
+  overflow: hidden;
+  /* justify-content: center; */
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.Carousel1.dragging {
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+
+.Carousel1.dragging img {
+  pointer-events: none;
+}
+
+.Carousel1 div {
+  background-color: #171717;
+  border-radius: 15px;
+  margin: 7px;
+  cursor: pointer;
+}
+
+.Carousel1 i {
+  height: 46px;
+  width: 46px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 46px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(280%);
+  background-color: white;
+  color: black;
+}
+
+.Carousel1 i:first-child {
+  left: -23px;
+  display: none;
+}
+
+.Carousel1 i:last-child {
+  right: -23px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin-left: 14px;
+  object-fit: cover;
+}
+
+img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and(max-width:900px) {
+  .Carousel img {
+    width: calc(100%/2);
+  }
+}
+
+@media screen and(max-width:900px) {
+  .Carousel img {
+    width: 100%;
+  }
+}
