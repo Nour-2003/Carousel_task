@@ -21,7 +21,7 @@ arrowIcons.forEach(function (icon) {
     } else {
       carousel.scrollLeft += firstImgWidth;
     }
-    showHideIcons();
+    //  showHideIcons();
   });
 });
 
@@ -37,7 +37,7 @@ const dragging = (e) => {
   carousel.classList.add("dragging");
   let positionDiff = e.pageX - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;
-  showHideIcons();
+  //showHideIcons();
 };
 
 const dragstop = () => {
@@ -52,7 +52,7 @@ carousel.addEventListener("mouseup", dragstop);
 
 
 const carousel1 = document.querySelector(".Carousel1");
-const firstImg1 = carousel.querySelectorAll("img")[1];
+const firstImg1 = carousel1.querySelectorAll("img")[1];
 const arrowIcons1 = document.querySelectorAll(".Carousel1 i");
 
 let isDragStart1 = false;
@@ -74,7 +74,7 @@ arrowIcons1.forEach(function (icon) {
     } else {
       carousel1.scrollLeft += firstImgWidth1;
     }
-    showHideIcons1();
+    // showHideIcons1();
   });
 });
 
@@ -90,7 +90,7 @@ const dragging1 = (e) => {
   carousel1.classList.add("dragging1");
   let positionDiff = e.pageX - prevPageX1;
   carousel1.scrollLeft = prevScrollLeft1 - positionDiff;
-  showHideIcons1();
+  //showHideIcons1();
 };
 
 const dragstop1 = () => {
