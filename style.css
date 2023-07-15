@@ -17,6 +17,7 @@ section {
   display: block;
   position: relative;
   max-width: 1380px;
+  margin-bottom: 40px;
 }
 
 .Carousel {
@@ -59,7 +60,7 @@ section {
 
 .Carousel i:first-child {
   left: -23px;
-  display: none;
+  /* display: none; */
 }
 
 .Carousel i:last-child {
@@ -106,7 +107,7 @@ section {
 
 .Carousel1 i:first-child {
   left: -23px;
-  display: none;
+  /* display: none; */
 }
 
 .Carousel1 i:last-child {
@@ -118,6 +119,15 @@ img {
   height: 200px;
   margin-left: 14px;
   object-fit: cover;
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin: 25px;
+  font-size: 50px;
 }
 
 img:first-child {
